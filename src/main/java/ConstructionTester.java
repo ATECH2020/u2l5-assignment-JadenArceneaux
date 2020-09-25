@@ -12,12 +12,13 @@ public class ConstructionTester {
         
         System.out.println("How many windows do you need");
         int windows = scanner.nextInt();
+        
+        scanner.close();
 
         Construction myConstruction = new Construction(8, 11, taxRate);
         double total = myConstruction.lumberCost(boards) + myConstruction.windowCost(windows);
         System.out.println("Total: " + total);
         System.out.println("Grand Total: " + myConstruction.grandTotal(total));
-
 
     }
 }
