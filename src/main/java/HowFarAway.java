@@ -13,5 +13,10 @@ public class HowFarAway {
         System.out.print("Enter the longitude of the ending location: ");
         double endLongitude = scanner.nextDouble();
 
+        GeoLocation myGL1 = new GeoLocation(startLatitude, startLongitude);
+        GeoLocation myGL2 = new GeoLocation(endLatitude, endLongitude);
+
+        System.out.println("The distance is " + myGL1.distanceFrom(myGL2));
+
     }
 }
